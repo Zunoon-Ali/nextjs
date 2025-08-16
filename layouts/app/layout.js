@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import LayoutWrapper from "./LayoutWrapper"; // client component
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,18 +14,14 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Facebook - collaborate with others",
-  description: "Facebook is a communty  app",
+  description: "Facebook is a community app",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Navbar />
-        {children}
-        <Footer />
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
   );

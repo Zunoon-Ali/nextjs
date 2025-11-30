@@ -4,10 +4,7 @@ import Script from 'next/script'
 function Contact() {
   return (
     <div className='min-h-[86vh] w-full'>
-      <Script>
-        {`alert("Welcome to Contact Page")`}
-      </Script>
-      I am Contact
+     <h1>Contact Page</h1>
     </div>
   )
 }

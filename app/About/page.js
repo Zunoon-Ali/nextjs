@@ -2,9 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='min-h-[86vh] w-full'>
-      I am About
+    <>
+    <div>
+      <h1>About Page</h1>
     </div>
+    </>
   )
 }
 
